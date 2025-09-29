@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+         <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-plane static-body width="20" height="20" color="green" position="0 0 -4" rotation="-90 0 0"></a-plane>
+        <a-box static-body width="1" height="0.25" depth="0.5" position="-2 4 -4" color="orange" rotation="0 0 -45"
+        animation="
+        property: rotation;
+        from: 0 0 -45;
+        to: 0 0 45;
+        dir: alternate;
+        loop: 2;
+        dur: 2000;
+        easing: easeInOutCubic;"></a-box>
+        <a-sphere dynamic-body color="red" radius="0.25" position="-2 5 -4"></a-sphere>
+        <a-box static-body width="3" height="0.25" depth="0.75" position="0 3 -4" color="orange"></a-box>
+        <a-box dynamic-body color="blue" width="0.75" height="0.15" depth="0.25" position="-0.5 3.5 -4" rotation="0 0 90"></a-box>
+        <a-box dynamic-body color="blue" width="0.75" height="0.15" depth="0.25" position="0 3.5 -4" rotation="0 0 90"></a-box>
+        <a-box dynamic-body color="blue" width="0.75" height="0.15" depth="0.25" position="0.5 3.5 -4" rotation="0 0 90"></a-box>
+        <a-box static-body width="2" height="0.25" depth="0.5" position="2.25 2.5 -4" color="orange" rotation="0 0 45"
+        animation="
+        property: rotation;
+        from: 0 0 45;
+        to: 0 0 -45;
+        dir:alternate;
+        loop: 2;
+        dur: 1500;
+        easing: easeInOutCubic;"
+        ></a-box>
+        <a-sphere dynamic-body color="yellow" radius="0.25" position="1 3.5 -4"></a-sphere>
+        <a-box static-body width="4" height="0.25" depth="0.75" position="0 1.5 -4" color="orange"></a-box>
+       <a-box dynamic-body color="purple" width="0.75" height="0.15" depth="0.25" position="1 2 -4" rotation="0 0 90"></a-box>
+        <a-box dynamic-body color="purple" width="0.75" height="0.15" depth="0.25" position="0.5 2 -4" rotation="0 0 90"></a-box>
+        <a-box dynamic-body color="purple" width="0.75" height="0.15" depth="0.25" position="0 2 -4" rotation="0 0 90"></a-box>
+        <a-sphere dynamic-body color="lightgreen" radius="0.25" position="-0.5 2 -4"></a-sphere>
+        <a-box static-body width="2" height="0.25" depth="0.5" position="-3 1 -4" color="orange" rotation="0 0 -45"></a-box>
+        <a-box dynamic-body color="pink" width="0.75" height="0.15" depth="0.25" position="-1.5 0.5 -4" rotation="0 0 90"></a-box>
+        <a-box dynamic-body color="pink" width="0.75" height="0.15" depth="0.25" position="-1 0.5 -4" rotation="0 0 90"></a-box>
+        <a-box dynamic-body color="pink" width="0.75" height="0.15" depth="0.25" position="-0.5 0.5 -4" rotation="0 0 90"></a-box>
+        </a-scene>
+    </body>
+</html>
