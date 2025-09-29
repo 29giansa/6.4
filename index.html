@@ -29,15 +29,22 @@
         dir:alternate;
         loop: 2;
         dur: 1500;
-        easing: easeInOutCubic;"
-        ></a-box>
+        easing: easeInOutCubic;"></a-box>
         <a-sphere dynamic-body color="yellow" radius="0.25" position="1 3.5 -4"></a-sphere>
         <a-box static-body width="4" height="0.25" depth="0.75" position="0 1.5 -4" color="orange"></a-box>
        <a-box dynamic-body color="purple" width="0.75" height="0.15" depth="0.25" position="1 2 -4" rotation="0 0 90"></a-box>
         <a-box dynamic-body color="purple" width="0.75" height="0.15" depth="0.25" position="0.5 2 -4" rotation="0 0 90"></a-box>
         <a-box dynamic-body color="purple" width="0.75" height="0.15" depth="0.25" position="0 2 -4" rotation="0 0 90"></a-box>
         <a-sphere dynamic-body color="lightgreen" radius="0.25" position="-0.5 2 -4"></a-sphere>
-        <a-box static-body width="2" height="0.25" depth="0.5" position="-3 1 -4" color="orange" rotation="0 0 -45"></a-box>
+        <a-box static-body width="2" height="0.25" depth="0.5" position="-3 1 -4" color="orange" rotation="0 0 -45"
+        animation="
+        property: rotation;
+        from: 0 0 -45;
+        to: 0 0 45;
+        dir: alternate;
+        loop: 2;
+        dur: 2000;
+        easing: easeInOutCubic;"></a-box>
         <a-box dynamic-body color="pink" width="0.75" height="0.15" depth="0.25" position="-1.5 0.5 -4" rotation="0 0 90"></a-box>
         <a-box dynamic-body color="pink" width="0.75" height="0.15" depth="0.25" position="-1 0.5 -4" rotation="0 0 90"></a-box>
         <a-box dynamic-body color="pink" width="0.75" height="0.15" depth="0.25" position="-0.5 0.5 -4" rotation="0 0 90"></a-box>
